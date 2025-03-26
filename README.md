@@ -12,31 +12,42 @@
 sudo apt update
 sudo apt upgrade -y
 sudo apt install -y curl git build-essential
---------------------------
+```
+
+```
 sudo apt install file -y
---------------------------
+```
+```
 sudo apt install unzip -y
---------------------------
+```
+```
 curl https://sh.rustup.rs -sSf | sh
 source "$HOME/.cargo/env"
 rustc --version
---------------------------
+```
+```
 sudo apt install -y jq
 jq --version
---------------------------
+```
+```
 curl -L \
      -H "Accept: application/vnd.github.v3.raw" \
      "https://api.github.com/repos/SeismicSystems/seismic-foundry/contents/sfoundryup/install?ref=seismic" | bash
---------------------------
+```
+```
 source ~/.bashrc
---------------------------
-sfoundryup      / it can take from 5 to 20 minutes
---------------------------
+```
+Note - Foundry up take 15 mins
+```
+sfoundryup  
+```
 git clone --recurse-submodules https://github.com/SeismicSystems/try-devnet.git
 cd try-devnet/packages/contract/
---------------------------
+```
+```
 bash script/deploy.sh
---------------------------
+```
+
 ```
 #### Next, you will receive a wallet, where you need to deposit the test ETH you received in the first step. Send 0.1 ETH there. Below is an example of what it looks like.
 
